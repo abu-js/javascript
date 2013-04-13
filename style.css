@@ -1,0 +1,29 @@
+diff --git a/style.css b/style.css
+index 6b69a7e..e69de29 100644
+--- a/style.css
++++ b/style.css
+@@ -1,24 +0,0 @@
+-@CHARSET "windows-1256";
+-#first-ex{
+-	width: 350px;
+-	height: 120px;
+-	padding: 10px 80px 10px 80px;
+-	font-weight:bolder;
+-	background-color:#DDDDDD;
+-	-moz-border-radius: 25px;
+-	-webkit-border-radius: 25px;
+-	border-radius: 25px;
+-	border-width: 6px;
+-	border-color:#005cb9;
+-	border-style:solid;
+-	margin-left:auto;
+-	margin-right:auto;
+-}
+-
+-h5{
+-	color: red;
+-}
+-
+-#first-number, #second-number, #sum{
+-	width: 70px;
+-}

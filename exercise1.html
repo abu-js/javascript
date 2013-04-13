@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>EXERCISE-1</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	
+	<body>
+				
+		<div id="first-ex">
+		<h5>(1) - TAKE TWO NUMBERS FROM USER, RETURN THE SUM. MAKE A CALCULATOR</h5>
+		<form name="form" >
+		<input id="first-number" name="sum1" /><b>+</b>
+		<input id="second-number" name="sum2" />
+		<input type="button" value="click for =" onclick="updatesum();" />
+		<input id="sum" name="sum" />
+		<!--input name="sum1" onChange="updatesum()" bach tbadal sum bohdha min nbadal kimat sum1/>
+		<input name="sum" readonly style="border:0px;"-->
+		</form>
+		</div>
+		
+		
+		
+		<script>
+		function updatesum() {
+			document.form.sum.value = parseInt(document.form.sum1.value) + parseInt(document.form.sum2.value);
+			// ohne -0 behandelt die zahl als string und nicht als integer
+			/*document.form.sum.value = parseInt(a)+parseInt(b).value;
+			var a = document.getElementById("first-number").value;
+			var b = document.getElementById("second-number").value;*/
+		}	
+		</script>
+
+	</body>
+</html>
