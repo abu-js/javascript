@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* CSS styles for this page */
+.reveal {background-color : cyan; }
+.reveal * { background-color : yellow; } /* Children of class="reveal" are coloured yellow */
+.reveal *.handle { background-color : green; } /* Children of class="reveal" are not shown */
+</style>
+
+<script>
+  // Don't do anything until the entire document has loaded
+  window.onload = function() {
+  // Find all container elements with class "reveal"
+  var elements = document.getElementsByClassName("reveal");
+  
+  var elt = elements[0];
+
+  // Find the "handle" element with the container
+  var title = elt.getElementsByClassName("handle")[0]; // for the first handle
+		  
+  // When that element is clicked, change the background
+  title.onclick = function() {
+	  if (elt.className == "reveal") elt.className = "revealed";
+	  else if (elt.className == "revealed") elt.className = "reveal";
+  }
+};
+</script>
+
+</head>
+<body>
+<div class="reveal">
+<h1 class="handle">Click to Change Colour</h1>
+<p>This paragraph is hidden. It appears when you click on the title.</p>
+<p>The second paragraph.</p>
+<p class="handle">This is a paragraph with class handle.</h1>
+Not a child. Therefore not yellow.
+</div>
+</body>
+</html>
