@@ -1,0 +1,12 @@
+
+Complete the following programs
+
+1) Modify the color.html file so that the 
+   user may change the color three times
+   while clicking the title.
+2) Modify the exercise1.html so that we have
+	a calculator with addition, multiplication
+	division and substraction.
+3) Include a graphical user interface for 2)
+	that looks like a real calculator such 
+	that the user enters the digits by clicking.
